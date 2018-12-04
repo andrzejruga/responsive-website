@@ -1,4 +1,5 @@
-// I added Roboto font to the file -- remember before copying it to another project!!!
+// I added mixin w/ Roboto font to the file in line 28!
+// Remember before copying it to another project - remove it and uncomment sans-serif!!!
 
 
 /* ==========================================================================
@@ -24,7 +25,8 @@ $legacy_browser_support: false !default;
  */
 
 html {
-    font-family: "Roboto", sans-serif; /* 1 */
+    @include font($font-normal); /* 1 */
+    // font-family: sans-serif;
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
     @if $legacy_browser_support {
