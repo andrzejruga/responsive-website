@@ -1,16 +1,13 @@
 .header {
     position: absolute;
-    top: 1em;
+    top: 0;
     left: 0;
     right: 0;
+    padding-top: 1em;
 
     &__logo-box {
         width: 25%;
         min-width: 10rem;
         max-width: 15rem;
     }
-}
-
-.main-nav {
-    display: none;
 }

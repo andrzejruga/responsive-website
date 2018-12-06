@@ -416,6 +416,11 @@ img {
   max-width: 1200px;
   margin: 0 auto; }
 
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 .75em; }
 
@@ -445,16 +450,14 @@ h2 {
 
 .header {
   position: absolute;
-  top: 1em;
+  top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  padding-top: 1em; }
   .header__logo-box {
     width: 25%;
     min-width: 10rem;
     max-width: 15rem; }
-
-.main-nav {
-  display: none; }
 
 .hero {
   background: linear-gradient(to right, #048ca8, #16db93);
@@ -467,6 +470,29 @@ h2 {
 
 .grid {
   display: flex; }
+
+.main-nav {
+  background: #d31869;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 1.2rem; }
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 100vh; }
+  .main-nav__item {
+    flex: 1 1 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .main-nav__link {
+    color: white;
+    text-decoration: none; }
 
 .btn {
   display: inline-block;
