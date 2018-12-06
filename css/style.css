@@ -476,8 +476,12 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
-  font-size: 1.2rem; }
+  left: 100%;
+  font-size: 1.2rem;
+  overflow: hidden;
+  transition: all ease-in-out 250ms; }
+  .main-nav--is-open {
+    left: 0; }
   .main-nav__list {
     display: flex;
     flex-direction: column;
@@ -487,12 +491,41 @@ h2 {
   .main-nav__item {
     flex: 1 1 auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex; }
+  .main-nav__link {
+    color: white;
+    text-decoration: none;
+    flex-basis: 100%;
     display: flex;
     align-items: center;
     justify-content: center; }
-  .main-nav__link {
-    color: white;
-    text-decoration: none; }
+    .main-nav__link:hover {
+      background: rgba(0, 0, 0, 0.1); }
+
+.nav-toggle {
+  display: block;
+  padding: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  cursor: pointer; }
+  .nav-toggle__hamburger, .nav-toggle__hamburger::before, .nav-toggle__hamburger::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 3px;
+    background: white;
+    transition: all ease-in-out 250ms; }
+  .nav-toggle__hamburger::before {
+    transform: translateY(-6px); }
+  .nav-toggle__hamburger::after {
+    transform: translateY(3px); }
+  .nav-toggle__hamburger--is-open {
+    transform: rotate(45deg); }
+    .nav-toggle__hamburger--is-open::before {
+      opacity: 0; }
+    .nav-toggle__hamburger--is-open::after {
+      transform: rotate(-90deg) translateX(3px); }
 
 .btn {
   display: inline-block;
