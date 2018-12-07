@@ -407,6 +407,10 @@ template {
 *, *::before, *::after {
   box-sizing: border-box; }
 
+body {
+  color: #048ca8;
+  text-align: center; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -469,7 +473,13 @@ h2 {
     display: none; }
 
 .grid {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+
+.col {
+  flex: 0 0 100%; }
+  .col--full {
+    flex: 0 0 100%; }
 
 .main-nav {
   background: #d31869;
@@ -526,6 +536,15 @@ h2 {
       opacity: 0; }
     .nav-toggle__hamburger--is-open::after {
       transform: rotate(-90deg) translateX(3px); }
+
+.sales {
+  padding: 10vh 0; }
+  .sales__point {
+    margin-bottom: 2.5em; }
+    .sales__point:first-of-type {
+      margin-top: 1.5em; }
+    .sales__point:last-of-type {
+      margin-bottom: 0; }
 
 .btn {
   display: inline-block;

@@ -1,0 +1,15 @@
+.sales {
+    padding: 10vh 0;
+
+    &__point {
+        margin-bottom: 2.5em;
+
+        &:first-of-type {
+            margin-top: 1.5em;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
