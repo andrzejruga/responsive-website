@@ -1,0 +1,12 @@
+.promo {
+
+    &__col-box {
+        padding-top: 6em;
+        @media (min-width: 495px) {
+            padding-top: 8em;
+        }
+    }
+
+
+
+}

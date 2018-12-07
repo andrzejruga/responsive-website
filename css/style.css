@@ -425,6 +425,14 @@ img {
   padding: 0;
   list-style: none; }
 
+.lg-screen {
+  display: none; }
+
+.bg-primary {
+  background: #048ca8;
+  color: white;
+  padding: 5em 2.5em; }
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 .75em; }
 
@@ -435,7 +443,8 @@ h1 {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.15;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 3px; }
 
 h2 {
   font-size: 1.2rem;
@@ -448,6 +457,17 @@ h2 {
   font-weight: 900; }
   .title-large span {
     font-weight: 300; }
+
+.title-box {
+  background: #d31869;
+  color: white;
+  margin: 0 auto;
+  padding: 2em;
+  transform: translateY(30%);
+  max-width: 90%; }
+  @media (min-width: 495px) {
+    .title-box {
+      transform: translateY(50%); } }
 
 .text-intro {
   font-size: 1.2rem; }
@@ -469,8 +489,6 @@ h2 {
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
-  .hero__img {
-    display: none; }
 
 .grid {
   display: flex;
@@ -538,13 +556,19 @@ h2 {
       transform: rotate(-90deg) translateX(3px); }
 
 .sales {
-  padding: 10vh 0; }
+  padding: 10vh 0 0; }
   .sales__point {
     margin-bottom: 2.5em; }
     .sales__point:first-of-type {
       margin-top: 1.5em; }
     .sales__point:last-of-type {
       margin-bottom: 0; }
+
+.promo__col-box {
+  padding-top: 6em; }
+  @media (min-width: 495px) {
+    .promo__col-box {
+      padding-top: 8em; } }
 
 .btn {
   display: inline-block;
