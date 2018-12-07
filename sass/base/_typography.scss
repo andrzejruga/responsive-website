@@ -24,6 +24,7 @@ h2 {
 .title-large {
     font-size: 3rem;
     font-weight: $font-black;
+    line-height: .9;
     span {
         font-weight: $font-light;
     }
@@ -38,6 +39,21 @@ h2 {
     max-width: 90%;
     @media (min-width: 495px) {
         transform: translateY(50%);
+    }
+}
+
+.title-footer {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        background: $text-inverse;
+        opacity: .25;
+        margin: .75em 0;
     }
 }
 
