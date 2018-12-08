@@ -6,10 +6,17 @@
 
         &:first-of-type {
             margin-top: 1.5em;
+            @media (min-width: 725px) {
+                margin-top: 0;
+                padding-left: 0;
+            }
         }
 
         &:last-of-type {
             margin-bottom: 0;
+            @media (min-width: 725px) {
+                padding-right: 0;
+            }
         }
     }
 }
