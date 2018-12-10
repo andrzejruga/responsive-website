@@ -19,6 +19,10 @@
         opacity: .05;
     }
 
+    &__container {
+        max-width: 25em;
+    }
+
     &__social {
         display: flex;
         font-size: 3rem;
@@ -39,7 +43,6 @@
     &__nav-list {
         display: flex;
         justify-content: space-around;
-        width: 80%;
         margin: 0 auto;
         position: relative;
     }
