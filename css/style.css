@@ -637,13 +637,16 @@ h2 {
 
 .promo__col-box {
   padding-top: 6em;
-  text-align: left;
+  text-align: center;
   padding-left: 7%;
   padding-top: 7.5em;
   padding-bottom: 7.5em; }
   @media (min-width: 495px) {
     .promo__col-box {
       padding-top: 8em; } }
+  @media (min-width: 725px) {
+    .promo__col-box {
+      text-align: left; } }
 
 .promo__img-box {
   background: url("../img/phone-in-hand.jpg");
@@ -737,6 +740,6 @@ h2 {
         top: -1em;
         bottom: 0;
         transform: skewX(60deg);
-        right: -110%; } }
-  .cta__container {
-    width: 50%; }
+        right: -110%; }
+      .cta__container {
+        width: 70%; } }
