@@ -4,7 +4,7 @@ This is one page layout created from scratch based on Kevin Powell tutorial from
 I made some improvements to the original project, for instance I used SCSS instead of SASS, BEM instead of author's own naming convention and a few other tweaks.<br>
 The site is build with Flexbox, with a bit of Grid and jQuery.<br>
 It's fully responsive, hopefully with no major problems ;)<br><br>
-Feel free to click https://andrzejruga.github.io/responsive-website/ and try it on your desktop, tablet or mobile!
+Feel free to click https://andrzejruga.github.io/rwd-page/ and try it on your desktop, tablet or mobile!
 
 
 
